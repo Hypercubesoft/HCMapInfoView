@@ -12,7 +12,7 @@ import MapKit
 /// HCPinAnnotationView class
 /// =========================
 /// Custom MKPinAnnotationView class used for handling custom info views
-class HCPinAnnotationView: MKPinAnnotationView, HCAnnotationDelegate
+open class HCPinAnnotationView: MKPinAnnotationView, HCAnnotationDelegate
 {
     // MARK: - Properties & HCAnnotationDelegate properties
     
@@ -28,12 +28,12 @@ class HCPinAnnotationView: MKPinAnnotationView, HCAnnotationDelegate
     // MARK: - Override some basic methods
     
     /// Override point(inside:with:) method
-    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+    override open func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         return self.isInside(point:point, event:event)
     }
     
     /// Override setSelected(_:animated:) method
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override open func setSelected(_ selected: Bool, animated: Bool) {
         self.setSelectedState(selected: selected)
     }
     
@@ -52,7 +52,7 @@ class HCPinAnnotationView: MKPinAnnotationView, HCAnnotationDelegate
     ///   - infoViewSize: Desired size for info view. If not defined, the view will use its size from the nib file.
     ///   - showInfoViewHandler: Handler for showing info view. The intention is to use this handler to update the generated view with desired data.
     /// - Returns: Default pin, i.e. HCPinAnnotationView instance
-    static func hcCreateDefaultPin<T:HCMapInfoView>(forMap map:MKMapView, forAnnotation annotation:MKAnnotation, withPinColor pinColor:UIColor? = nil, withReuseIdentifier reuseIdentifier:String, showCallout:Bool = true, withClass mapInfoViewClass:T.Type? = nil, mapInfoViewName mapInfoViewNibName:String? = nil, infoViewSize:CGSize? = nil, showInfoViewHandler:ShowInfoViewCompletionHandler? = nil) -> HCPinAnnotationView?
+    open static func hcCreateDefaultPin<T:HCMapInfoView>(forMap map:MKMapView, forAnnotation annotation:MKAnnotation, withPinColor pinColor:UIColor? = nil, withReuseIdentifier reuseIdentifier:String, showCallout:Bool = true, withClass mapInfoViewClass:T.Type? = nil, mapInfoViewName mapInfoViewNibName:String? = nil, infoViewSize:CGSize? = nil, showInfoViewHandler:ShowInfoViewCompletionHandler? = nil) -> HCPinAnnotationView?
     {
         var pin = map.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier) as? HCPinAnnotationView
         if pin == nil

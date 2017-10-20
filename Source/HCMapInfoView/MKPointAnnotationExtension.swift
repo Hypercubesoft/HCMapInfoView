@@ -20,7 +20,7 @@ extension MKPointAnnotation
     ///   - title: Annotation title
     ///   - subtitle: Annotation subtitle
     ///   - coordinate:  Annotation coordinate
-    convenience init(title:String, subtitle:String, coordinate:CLLocationCoordinate2D)
+    public convenience init(title:String, subtitle:String, coordinate:CLLocationCoordinate2D)
     {
         self.init()
         self.title = title

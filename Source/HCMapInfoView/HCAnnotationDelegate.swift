@@ -10,7 +10,7 @@ import MapKit
 import HCFramework
 
 /// Typealias for handler which is called when info view is presented
-typealias ShowInfoViewCompletionHandler = (_ infoView: HCMapInfoView) -> Void
+public typealias ShowInfoViewCompletionHandler = (_ infoView: HCMapInfoView) -> Void
 
 /// HCAnnotationDelegate protocol used for extending HCAnnotationView and HCPinAnnotationView classes
 protocol HCAnnotationDelegate where Self:MKAnnotationView

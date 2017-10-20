@@ -11,12 +11,12 @@ import UIKit
 /// HCMapInfoView class
 /// =========================
 /// Custom UIView class which has to be subclassed and used as a class for custom info view.
-class HCMapInfoView: UIView {
+open class HCMapInfoView: UIView {
 
     // MARK: - Override checking touch events
     
     /// Override hitTest(_:with:) method
-    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+    override open func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         if let hitTest = super.hitTest(point, with: event)
         {
             superview?.bringSubview(toFront: self)
@@ -26,7 +26,7 @@ class HCMapInfoView: UIView {
     }
     
     /// Override point(inside:with:) method
-    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+    override open func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         let isTouchableAtThisPoint: Bool = self.alpha(fromPoint: point) > 0
         return isTouchableAtThisPoint
     }

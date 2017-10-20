@@ -11,7 +11,7 @@ import MapKit
 /// HCAnnotation class
 /// =========================
 /// Custom MKPointAnnotation class which handles custom map info views, i.e. saves custom map info view properties
-class HCAnnotation: MKPointAnnotation
+open class HCAnnotation: MKPointAnnotation
 {
     // MARK: - Properties
     
