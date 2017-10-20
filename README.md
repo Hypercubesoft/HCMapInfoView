@@ -59,62 +59,65 @@ Using this library includes several basic steps:
 4. **Add annotations on map.** 
 <br>If you want to add a simple pin on the map which shows simple callout, you can do it without problems. But, if you want to show simple or custom annotation pins which shows custom info views, you need to use HCAnnotation instead of basic MKPointAnnotation. Also, you can subclass HCAnnotation to extend its features. Here is the example how to create simple HCAnnotation and add it to your map:
    
-    ```swift 
+    ```swift
     mapView.addAnnotation(MKPointAnnotation(title: "School", subtitle: "Business school", coordinate: CLLocationCoordinate2D(latitude: 20.0, longitude: 100.0)))
     ``` 
 5. **Implement MKMapViewDelegate methods and create view for every annotation (MKAnnotationView)**
 <br>In order to show pins on the map and show custom info views for those pins, you need to implement basic MKMapViewDelegate methods. For creating pins which can show custom info views, you only have to implement MKMapViewDelegate method for creating annotation views. 
 <br><br>If you want to make simple pin which shows simple callout, you can use HCPinAnnotationView class and its hcCreateDefaultPin static method as a shortcut for creating, like in this sample code:  
-   
-        ```swift 
-  		func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? 
-        {
-            ...
-            return HCPinAnnotationView.hcCreateDefaultPin(forMap: mapView, forAnnotation: annotation, withReuseIdentifier: "BasicMapPin")
-            ...
-        }
-        ```
+   ```swift
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? 
+    {
+        ///...
+        return HCPinAnnotationView.hcCreateDefaultPin(forMap: mapView, forAnnotation: annotation, withReuseIdentifier: "BasicMapPin")
+        ///...
+    }
+    ``` 
+       
        If you need to make simple pin which can show custom info views, you can use the same method, but with additional parameters which define the class for custom map info view and nib name, like in this sample code: 
        
-       ```swift 
-  		func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? 
-        {
-            ...
-            return HCPinAnnotationView.hcCreateDefaultPin(forMap: mapView, forAnnotation: annotation, withPinColor: UIColor.hcColorWithHex("389E13"), withReuseIdentifier: "GreenMapPin", withClass: MapInfoGreenView.self, mapInfoViewName: "MapInfoGreenView", showInfoViewHandler: {infoView in
-                if let greenView = infoView as? MapInfoGreenView
-                {
-                    greenView.update(withAnnotation: singleAnnotation)
-                }
-            })
-            ...
-        }
-       ```
+    ```swift
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? 
+    {
+        //...
+        return HCPinAnnotationView.hcCreateDefaultPin(forMap: mapView, forAnnotation: annotation, withPinColor: UIColor.hcColorWithHex("389E13"), withReuseIdentifier: "GreenMapPin", withClass: MapInfoGreenView.self, mapInfoViewName: "MapInfoGreenView", showInfoViewHandler: {infoView in
+            if let greenView = infoView as? MapInfoGreenView
+            {
+                greenView.update(withAnnotation: singleAnnotation)
+            }
+        })
+        //...
+    }
+    ``` 
+       
+       
        Further, if you want to show pin with a custom image which can show callout, but not custom info view, you can use HCAnnotationView class and its static hcCreatePin method, like in this sample code: 
        
-       ```swift 
-  		func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? 
-        {
-            ...
-            return HCAnnotationView.hcCreatePin(forMap: mapView, forAnnotation: annotation, withPinImage:#imageLiteral(resourceName: "blueMapPin"), withReuseIdentifier:"AnimalMapPin")
-            ...
-        }
-       ```
+    ```swift
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? 
+    {
+        //...
+        return HCAnnotationView.hcCreatePin(forMap: mapView, forAnnotation: annotation, withPinImage:#imageLiteral(resourceName: "blueMapPin"), withReuseIdentifier:"AnimalMapPin")
+        //...
+    }
+    ``` 
+       
        And finally, if you want to show pin with a custom image which can show custom info views, you can the same method, but with additional parameters which define the class for custom map info view and nib name, like in this sample code:
        
-       ```swift 
-  		func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? 
-        {
-            ...
-            return HCAnnotationView.hcCreatePin(forMap: mapView, forAnnotation: annotation, withPinImage:#imageLiteral(resourceName: "blueMapPin"), withReuseIdentifier:"AnimalMapPin", withClass: MapInfoAnimalView.self, mapInfoViewName: "MapInfoAnimalView", showInfoViewHandler: {infoView in
+    ```swift
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? 
+    {
+        //...
+        return HCAnnotationView.hcCreatePin(forMap: mapView, forAnnotation: annotation, withPinImage:#imageLiteral(resourceName: "blueMapPin"), withReuseIdentifier:"AnimalMapPin", withClass: MapInfoAnimalView.self, mapInfoViewName: "MapInfoAnimalView", showInfoViewHandler: {infoView in
                 if let blueView = infoView as? MapInfoAnimalView
                 {
                     blueView.update(withAnimal: animal)
                 }
                         
             })
-            ...
-        }
-       ```
+        //...
+    }
+    ``` 
 
 In any case, you can download and run HCMapInfoView Sample project from this repository. In this project, there is an example of usage where you can find out how to use this library. Also, every property and method in this library is well documented, so you'll understand meaning and purpose of every class, extension, property, method or method parameter.
 
