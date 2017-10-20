@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="hypercubeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dZ2-ln-G88">
+                                <rect key="frame" x="132.5" y="619.5" width="110" height="27.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dZ2-ln-G88" secondAttribute="height" multiplier="4:1" id="SkW-hG-Ru9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="hcMapInfoSplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="K2p-dA-UME">
+                                <rect key="frame" x="113" y="268.5" width="150" height="150"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.039215686274509803" green="0.5725490196078431" blue="0.94901960784313721" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="K2p-dA-UME" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.4" id="6zA-IQ-14h"/>
+                            <constraint firstItem="K2p-dA-UME" firstAttribute="width" secondItem="K2p-dA-UME" secondAttribute="height" multiplier="1:1" id="8QP-bk-BqZ"/>
+                            <constraint firstItem="dZ2-ln-G88" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KgX-0j-T0B"/>
+                            <constraint firstItem="K2p-dA-UME" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mu2-al-KQQ"/>
+                            <constraint firstItem="dZ2-ln-G88" firstAttribute="width" secondItem="dZ2-ln-G88" secondAttribute="height" multiplier="4:1" id="Vyu-Nb-rTh"/>
+                            <constraint firstItem="K2p-dA-UME" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gtz-ll-loa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dZ2-ln-G88" secondAttribute="bottom" constant="20" id="mmi-2S-LoS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hcMapInfoSplashLogo" width="333" height="333"/>
+        <image name="hypercubeLogo" width="110" height="22"/>
+    </resources>
+</document>

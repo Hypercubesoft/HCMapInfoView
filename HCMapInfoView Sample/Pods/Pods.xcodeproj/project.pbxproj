@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B409D631591948CBF823646615785C /* HCUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8A572604FB7195406D52593EDBF4A /* HCUtility.swift */; };
+		023C1F5593F2477AEE06E9A542AA7993 /* HCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7831A18FAF91F63F3E70FB7738AEE7A2 /* HCView.swift */; };
+		0F8B92F7210B3EEF48E40CE719E41E78 /* HCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB00D7686A505314C02B17A516032B7 /* HCNavigationController.swift */; };
+		1DFCED1A3A2000C45143A3BC7A4F0116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1FFCFBF5FBF45401C64A306D755BE8C8 /* HCImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0838A27B8579A0CD19A6B3BAC5E147E /* HCImagePicker.swift */; };
+		2CCE44877B96BBD9CB09B43BE8C02A86 /* HCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8152ACB09CF743BB6C1B99ABDC09E58A /* HCImage.swift */; };
+		3D109061D788114E237EC9393CB47FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		453AA59A21BB6BF6443A7195BE5939D7 /* HCArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DACBD967A45593A0D9E8E57191466A1 /* HCArray.swift */; };
+		45553693C011EA37C4A47E06D313482F /* HCString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7D1C08A99248E708F45911B660840 /* HCString.swift */; };
+		5D16C8E79BC5CFB133333CB788F0DA1A /* HCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BB7C0C550A64996BED4843D9072F57 /* HCColor.swift */; };
+		652E203C00A3B38CD5D8F4FE15BA58D2 /* HCFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3198AB30071462EF15948ACBF689A7DA /* HCFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		692AE122DAE827C8AD413605622777DC /* HCAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0523D7C762393191B86877E73B7B28 /* HCAttributedString.swift */; };
+		986C60E9C6D9A819B84F8ABA1EB04C92 /* HCDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE202013E11649E7F9F5EDC33152E4 /* HCDate.swift */; };
+		AAF57366A5DF108688F028E45A7318AD /* HCDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F550F9989CD42DDD73F4818A2B3FC5 /* HCDialog.swift */; };
+		CE1D368EE766E6236B871CA28351FFB6 /* HCDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A16BEB4AAEB264C012D531563C3EF8 /* HCDispatcher.swift */; };
+		CEE34C9F2BBB866D4521DED9FF7C7FED /* HCSocialNetworkURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C846175F917DF1BF6F59F9CBFB1B0930 /* HCSocialNetworkURL.swift */; };
+		D2DB635158EB02D2E6DC91331814D282 /* Pods-HCMapInfoView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A4BA79F440DF34567EA399274CE1F8 /* Pods-HCMapInfoView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFA9CD9F0DCF5715839B7EC7D29597B8 /* HCFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF26C596181E6003358FC2FBBF271D /* HCFramework-dummy.m */; };
+		E0416562960D326F6871579D96024001 /* Pods-HCMapInfoView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1746530E86A9E03304484F64D241222D /* Pods-HCMapInfoView-dummy.m */; };
+		E5118F94D53715C0BED85B789691E093 /* HCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C182FD5B126A28B237E99CD193B2F4C /* HCViewController.swift */; };
+		F6E06CE149E2DF607EF4EFB13E55CE60 /* HCAppNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D56DD9AF95300CA588981F916AF7ED /* HCAppNotify.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AEC3C4AB549B582D7B00674A239077A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01CB43E67EA5CAEAE4E0F2E04FE94A95;
+			remoteInfo = HCFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043D3F7365D33C9FF4DB8CA6C417BC63 /* Pods-HCMapInfoView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HCMapInfoView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		12F550F9989CD42DDD73F4818A2B3FC5 /* HCDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCDialog.swift; path = HCFramework/Managers/HCDialog.swift; sourceTree = "<group>"; };
+		1746530E86A9E03304484F64D241222D /* Pods-HCMapInfoView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HCMapInfoView-dummy.m"; sourceTree = "<group>"; };
+		3198AB30071462EF15948ACBF689A7DA /* HCFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCFramework-umbrella.h"; sourceTree = "<group>"; };
+		3F0523D7C762393191B86877E73B7B28 /* HCAttributedString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCAttributedString.swift; path = HCFramework/Extensions/HCAttributedString.swift; sourceTree = "<group>"; };
+		4AD6B0555520A452E1192E7FDF7B5258 /* Pods-HCMapInfoView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCMapInfoView-frameworks.sh"; sourceTree = "<group>"; };
+		4D3CD4A028B6E61CB6B9025EF5596CA2 /* HCFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HCFramework.framework; path = HCFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8F583E199B0354E0B2E1D8BB7E060F /* HCFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCFramework.xcconfig; sourceTree = "<group>"; };
+		5FB00D7686A505314C02B17A516032B7 /* HCNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCNavigationController.swift; path = HCFramework/Extensions/HCNavigationController.swift; sourceTree = "<group>"; };
+		61BB7C0C550A64996BED4843D9072F57 /* HCColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCColor.swift; path = HCFramework/Extensions/HCColor.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67A4BA79F440DF34567EA399274CE1F8 /* Pods-HCMapInfoView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HCMapInfoView-umbrella.h"; sourceTree = "<group>"; };
+		703C62A85908501F0176E5EF6B89A487 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7831A18FAF91F63F3E70FB7738AEE7A2 /* HCView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCView.swift; path = HCFramework/Extensions/HCView.swift; sourceTree = "<group>"; };
+		79D56DD9AF95300CA588981F916AF7ED /* HCAppNotify.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCAppNotify.swift; path = HCFramework/Managers/HCAppNotify.swift; sourceTree = "<group>"; };
+		7DD7D1C08A99248E708F45911B660840 /* HCString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCString.swift; path = HCFramework/Extensions/HCString.swift; sourceTree = "<group>"; };
+		8152ACB09CF743BB6C1B99ABDC09E58A /* HCImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCImage.swift; path = HCFramework/Extensions/HCImage.swift; sourceTree = "<group>"; };
+		8786278E65B2E89A410AC17028E29B91 /* HCFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HCFramework.modulemap; sourceTree = "<group>"; };
+		8C182FD5B126A28B237E99CD193B2F4C /* HCViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCViewController.swift; path = HCFramework/Extensions/HCViewController.swift; sourceTree = "<group>"; };
+		8DACBD967A45593A0D9E8E57191466A1 /* HCArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCArray.swift; path = HCFramework/Extensions/HCArray.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9489A54079575F33CA52E9DF4D73799C /* Pods-HCMapInfoView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HCMapInfoView-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D65A504E5DA5EC27B45FFDF6D917BB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03558A409F93DA7356A9361733BB5D5 /* Pods-HCMapInfoView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCMapInfoView.release.xcconfig"; sourceTree = "<group>"; };
+		A0F8A572604FB7195406D52593EDBF4A /* HCUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCUtility.swift; path = HCFramework/HCUtility.swift; sourceTree = "<group>"; };
+		B0838A27B8579A0CD19A6B3BAC5E147E /* HCImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCImagePicker.swift; path = HCFramework/Managers/HCImagePicker.swift; sourceTree = "<group>"; };
+		B4CF26C596181E6003358FC2FBBF271D /* HCFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HCFramework-dummy.m"; sourceTree = "<group>"; };
+		B6816733C1F95674F9B0CE88F6148EED /* Pods-HCMapInfoView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCMapInfoView-resources.sh"; sourceTree = "<group>"; };
+		C01B23ADCC273963B586B3E8E6A8F4C0 /* HCFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCFramework-prefix.pch"; sourceTree = "<group>"; };
+		C5A16BEB4AAEB264C012D531563C3EF8 /* HCDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCDispatcher.swift; path = HCFramework/Managers/HCDispatcher.swift; sourceTree = "<group>"; };
+		C80C238CFB404E8F7F4E3F026653EF5B /* Pods_HCMapInfoView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HCMapInfoView.framework; path = "Pods-HCMapInfoView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C846175F917DF1BF6F59F9CBFB1B0930 /* HCSocialNetworkURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCSocialNetworkURL.swift; path = HCFramework/Managers/HCSocialNetworkURL.swift; sourceTree = "<group>"; };
+		D9EE202013E11649E7F9F5EDC33152E4 /* HCDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCDate.swift; path = HCFramework/Extensions/HCDate.swift; sourceTree = "<group>"; };
+		E6C234C2A3A3E4F6FD0826828CE2B9C1 /* Pods-HCMapInfoView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HCMapInfoView.modulemap"; sourceTree = "<group>"; };
+		FA383E2DB313B751A1FE3AF14B82454F /* Pods-HCMapInfoView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCMapInfoView.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		146564E48ED8EB7E1EB025E22955F5CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D109061D788114E237EC9393CB47FCA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2A315FE1AED7B3A168BE32EDA61261 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DFCED1A3A2000C45143A3BC7A4F0116 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CCDCBF8E5F64DF8F40B6A729F0A1156 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8786278E65B2E89A410AC17028E29B91 /* HCFramework.modulemap */,
+				5D8F583E199B0354E0B2E1D8BB7E060F /* HCFramework.xcconfig */,
+				B4CF26C596181E6003358FC2FBBF271D /* HCFramework-dummy.m */,
+				C01B23ADCC273963B586B3E8E6A8F4C0 /* HCFramework-prefix.pch */,
+				3198AB30071462EF15948ACBF689A7DA /* HCFramework-umbrella.h */,
+				703C62A85908501F0176E5EF6B89A487 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HCFramework";
+			sourceTree = "<group>";
+		};
+		3494B6164DD439DB1B262A69C35E04F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D3CD4A028B6E61CB6B9025EF5596CA2 /* HCFramework.framework */,
+				C80C238CFB404E8F7F4E3F026653EF5B /* Pods_HCMapInfoView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6519E57A86EA187AEF2E8D365B6FBAF7 /* Pods-HCMapInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				9D65A504E5DA5EC27B45FFDF6D917BB6 /* Info.plist */,
+				E6C234C2A3A3E4F6FD0826828CE2B9C1 /* Pods-HCMapInfoView.modulemap */,
+				043D3F7365D33C9FF4DB8CA6C417BC63 /* Pods-HCMapInfoView-acknowledgements.markdown */,
+				9489A54079575F33CA52E9DF4D73799C /* Pods-HCMapInfoView-acknowledgements.plist */,
+				1746530E86A9E03304484F64D241222D /* Pods-HCMapInfoView-dummy.m */,
+				4AD6B0555520A452E1192E7FDF7B5258 /* Pods-HCMapInfoView-frameworks.sh */,
+				B6816733C1F95674F9B0CE88F6148EED /* Pods-HCMapInfoView-resources.sh */,
+				67A4BA79F440DF34567EA399274CE1F8 /* Pods-HCMapInfoView-umbrella.h */,
+				FA383E2DB313B751A1FE3AF14B82454F /* Pods-HCMapInfoView.debug.xcconfig */,
+				A03558A409F93DA7356A9361733BB5D5 /* Pods-HCMapInfoView.release.xcconfig */,
+			);
+			name = "Pods-HCMapInfoView";
+			path = "Target Support Files/Pods-HCMapInfoView";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				89A62966103809EAAF5B66936017B8B9 /* Pods */,
+				3494B6164DD439DB1B262A69C35E04F3 /* Products */,
+				8F9E4C97996236297429A22995F4379A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89A62966103809EAAF5B66936017B8B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBEC685706B596752E087D80E82D064D /* HCFramework */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F9E4C97996236297429A22995F4379A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6519E57A86EA187AEF2E8D365B6FBAF7 /* Pods-HCMapInfoView */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FBEC685706B596752E087D80E82D064D /* HCFramework */ = {
+			isa = PBXGroup;
+			children = (
+				79D56DD9AF95300CA588981F916AF7ED /* HCAppNotify.swift */,
+				8DACBD967A45593A0D9E8E57191466A1 /* HCArray.swift */,
+				3F0523D7C762393191B86877E73B7B28 /* HCAttributedString.swift */,
+				61BB7C0C550A64996BED4843D9072F57 /* HCColor.swift */,
+				D9EE202013E11649E7F9F5EDC33152E4 /* HCDate.swift */,
+				12F550F9989CD42DDD73F4818A2B3FC5 /* HCDialog.swift */,
+				C5A16BEB4AAEB264C012D531563C3EF8 /* HCDispatcher.swift */,
+				8152ACB09CF743BB6C1B99ABDC09E58A /* HCImage.swift */,
+				B0838A27B8579A0CD19A6B3BAC5E147E /* HCImagePicker.swift */,
+				5FB00D7686A505314C02B17A516032B7 /* HCNavigationController.swift */,
+				C846175F917DF1BF6F59F9CBFB1B0930 /* HCSocialNetworkURL.swift */,
+				7DD7D1C08A99248E708F45911B660840 /* HCString.swift */,
+				A0F8A572604FB7195406D52593EDBF4A /* HCUtility.swift */,
+				7831A18FAF91F63F3E70FB7738AEE7A2 /* HCView.swift */,
+				8C182FD5B126A28B237E99CD193B2F4C /* HCViewController.swift */,
+				2CCDCBF8E5F64DF8F40B6A729F0A1156 /* Support Files */,
+			);
+			name = HCFramework;
+			path = HCFramework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7F2EB3F09679130B04C8DEE467FF7494 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2DB635158EB02D2E6DC91331814D282 /* Pods-HCMapInfoView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F90AEBF9324E201D85BE947B53FB742 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652E203C00A3B38CD5D8F4FE15BA58D2 /* HCFramework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01CB43E67EA5CAEAE4E0F2E04FE94A95 /* HCFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F784F0C77EC8732EBF9D3B42B663E2 /* Build configuration list for PBXNativeTarget "HCFramework" */;
+			buildPhases = (
+				4F9BF949729CEE2B25A14611690D3E43 /* Sources */,
+				146564E48ED8EB7E1EB025E22955F5CD /* Frameworks */,
+				8F90AEBF9324E201D85BE947B53FB742 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HCFramework;
+			productName = HCFramework;
+			productReference = 4D3CD4A028B6E61CB6B9025EF5596CA2 /* HCFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30353F2630F0F17A48DC82BC918EE1A5 /* Pods-HCMapInfoView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 195050322213BD0DB53A6ADE6D393E49 /* Build configuration list for PBXNativeTarget "Pods-HCMapInfoView" */;
+			buildPhases = (
+				210D40148733273ECA82373C7A5CB25D /* Sources */,
+				1F2A315FE1AED7B3A168BE32EDA61261 /* Frameworks */,
+				7F2EB3F09679130B04C8DEE467FF7494 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D8E50A1004D14AB23611EABA94E0A5F /* PBXTargetDependency */,
+			);
+			name = "Pods-HCMapInfoView";
+			productName = "Pods-HCMapInfoView";
+			productReference = C80C238CFB404E8F7F4E3F026653EF5B /* Pods_HCMapInfoView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3494B6164DD439DB1B262A69C35E04F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01CB43E67EA5CAEAE4E0F2E04FE94A95 /* HCFramework */,
+				30353F2630F0F17A48DC82BC918EE1A5 /* Pods-HCMapInfoView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		210D40148733273ECA82373C7A5CB25D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0416562960D326F6871579D96024001 /* Pods-HCMapInfoView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F9BF949729CEE2B25A14611690D3E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E06CE149E2DF607EF4EFB13E55CE60 /* HCAppNotify.swift in Sources */,
+				453AA59A21BB6BF6443A7195BE5939D7 /* HCArray.swift in Sources */,
+				692AE122DAE827C8AD413605622777DC /* HCAttributedString.swift in Sources */,
+				5D16C8E79BC5CFB133333CB788F0DA1A /* HCColor.swift in Sources */,
+				986C60E9C6D9A819B84F8ABA1EB04C92 /* HCDate.swift in Sources */,
+				AAF57366A5DF108688F028E45A7318AD /* HCDialog.swift in Sources */,
+				CE1D368EE766E6236B871CA28351FFB6 /* HCDispatcher.swift in Sources */,
+				DFA9CD9F0DCF5715839B7EC7D29597B8 /* HCFramework-dummy.m in Sources */,
+				2CCE44877B96BBD9CB09B43BE8C02A86 /* HCImage.swift in Sources */,
+				1FFCFBF5FBF45401C64A306D755BE8C8 /* HCImagePicker.swift in Sources */,
+				0F8B92F7210B3EEF48E40CE719E41E78 /* HCNavigationController.swift in Sources */,
+				CEE34C9F2BBB866D4521DED9FF7C7FED /* HCSocialNetworkURL.swift in Sources */,
+				45553693C011EA37C4A47E06D313482F /* HCString.swift in Sources */,
+				01B409D631591948CBF823646615785C /* HCUtility.swift in Sources */,
+				023C1F5593F2477AEE06E9A542AA7993 /* HCView.swift in Sources */,
+				E5118F94D53715C0BED85B789691E093 /* HCViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D8E50A1004D14AB23611EABA94E0A5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HCFramework;
+			target = 01CB43E67EA5CAEAE4E0F2E04FE94A95 /* HCFramework */;
+			targetProxy = 9AEC3C4AB549B582D7B00674A239077A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		287B5C4B550837E5638DAE001E2FEF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA383E2DB313B751A1FE3AF14B82454F /* Pods-HCMapInfoView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HCMapInfoView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HCMapInfoView/Pods-HCMapInfoView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HCMapInfoView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		614FA88C03B033EEEC4C761E46A0DB1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D8F583E199B0354E0B2E1D8BB7E060F /* HCFramework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HCFramework/HCFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HCFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HCFramework/HCFramework.modulemap";
+				PRODUCT_NAME = HCFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9A3E6472FA4792BEB8223D60C105AE66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D8F583E199B0354E0B2E1D8BB7E060F /* HCFramework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HCFramework/HCFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HCFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HCFramework/HCFramework.modulemap";
+				PRODUCT_NAME = HCFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ACC7C065B6EF67BFF65D7C742E11FEEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A03558A409F93DA7356A9361733BB5D5 /* Pods-HCMapInfoView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HCMapInfoView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HCMapInfoView/Pods-HCMapInfoView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HCMapInfoView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		195050322213BD0DB53A6ADE6D393E49 /* Build configuration list for PBXNativeTarget "Pods-HCMapInfoView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287B5C4B550837E5638DAE001E2FEF61 /* Debug */,
+				ACC7C065B6EF67BFF65D7C742E11FEEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F784F0C77EC8732EBF9D3B42B663E2 /* Build configuration list for PBXNativeTarget "HCFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A3E6472FA4792BEB8223D60C105AE66 /* Debug */,
+				614FA88C03B033EEEC4C761E46A0DB1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

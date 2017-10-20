@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20F72ED4BCE3D373EE3E4BE1 /* Pods_HCMapInfoView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341E2CD228169D077EFA3963 /* Pods_HCMapInfoView.framework */; };
+		A537C29D1F989AD3002B5251 /* HCAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A537C2971F989ACF002B5251 /* HCAnnotation.swift */; };
+		A537C29E1F989AD3002B5251 /* HCPinAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A537C2981F989ACF002B5251 /* HCPinAnnotationView.swift */; };
+		A537C29F1F989AD3002B5251 /* HCAnnotationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A537C2991F989ACF002B5251 /* HCAnnotationDelegate.swift */; };
+		A537C2A01F989AD3002B5251 /* HCAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A537C29A1F989ACF002B5251 /* HCAnnotationView.swift */; };
+		A537C2A11F989AD3002B5251 /* HCMapInfoViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A537C29B1F989ACF002B5251 /* HCMapInfoViewSettings.swift */; };
+		A537C2A21F989AD3002B5251 /* HCMapInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A537C29C1F989ACF002B5251 /* HCMapInfoView.swift */; };
+		A5673E061F98F94200679FDB /* MKPointAnnotationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5673E051F98F94200679FDB /* MKPointAnnotationExtension.swift */; };
+		F5015FF21F994F6D0004F0AE /* MapInfoGreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5015FF11F994F6D0004F0AE /* MapInfoGreenView.xib */; };
+		F5015FF41F994F8A0004F0AE /* MapInfoGreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5015FF31F994F8A0004F0AE /* MapInfoGreenView.swift */; };
+		F549B77B1F97E96A00F3C321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549B7711F97E96700F3C321 /* AppDelegate.swift */; };
+		F549B77C1F97E97200F3C321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F549B7771F97E96700F3C321 /* LaunchScreen.storyboard */; };
+		F549B77D1F97E97200F3C321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F549B7781F97E96700F3C321 /* Main.storyboard */; };
+		F549B77E1F97E97600F3C321 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549B77A1F97E96700F3C321 /* MapVC.swift */; };
+		F549B77F1F97E99100F3C321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F549B7741F97E96700F3C321 /* Assets.xcassets */; };
+		F549B79C1F97EB9B00F3C321 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549B79A1F97EB9900F3C321 /* Animal.swift */; };
+		F549B79D1F97EB9E00F3C321 /* Man.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549B79B1F97EB9900F3C321 /* Man.swift */; };
+		F549B7A41F97EC2800F3C321 /* MapInfoAnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549B7A11F97EC1D00F3C321 /* MapInfoAnimalView.swift */; };
+		F549B7A51F97EC2800F3C321 /* MapInfoManView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549B7A21F97EC1D00F3C321 /* MapInfoManView.swift */; };
+		F549B7A91F97EC4900F3C321 /* MapInfoAnimalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F549B7A71F97EC4600F3C321 /* MapInfoAnimalView.xib */; };
+		F549B7AA1F97EC4900F3C321 /* MapInfoManView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F549B7A81F97EC4600F3C321 /* MapInfoManView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		341E2CD228169D077EFA3963 /* Pods_HCMapInfoView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCMapInfoView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A537C2971F989ACF002B5251 /* HCAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCAnnotation.swift; sourceTree = "<group>"; };
+		A537C2981F989ACF002B5251 /* HCPinAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCPinAnnotationView.swift; sourceTree = "<group>"; };
+		A537C2991F989ACF002B5251 /* HCAnnotationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCAnnotationDelegate.swift; sourceTree = "<group>"; };
+		A537C29A1F989ACF002B5251 /* HCAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCAnnotationView.swift; sourceTree = "<group>"; };
+		A537C29B1F989ACF002B5251 /* HCMapInfoViewSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCMapInfoViewSettings.swift; sourceTree = "<group>"; };
+		A537C29C1F989ACF002B5251 /* HCMapInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCMapInfoView.swift; sourceTree = "<group>"; };
+		A5673E051F98F94200679FDB /* MKPointAnnotationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPointAnnotationExtension.swift; sourceTree = "<group>"; };
+		CF1A152F4563F61C476D2687 /* Pods-HCMapInfoView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCMapInfoView.release.xcconfig"; path = "Pods/Target Support Files/Pods-HCMapInfoView/Pods-HCMapInfoView.release.xcconfig"; sourceTree = "<group>"; };
+		EE9C04DAA17FA645D512D99F /* Pods-HCMapInfoView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCMapInfoView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HCMapInfoView/Pods-HCMapInfoView.debug.xcconfig"; sourceTree = "<group>"; };
+		F5015FF11F994F6D0004F0AE /* MapInfoGreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapInfoGreenView.xib; sourceTree = "<group>"; };
+		F5015FF31F994F8A0004F0AE /* MapInfoGreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfoGreenView.swift; sourceTree = "<group>"; };
+		F549B73D1F97E83E00F3C321 /* HCMapInfoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCMapInfoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F549B7711F97E96700F3C321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F549B7721F97E96700F3C321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F549B7741F97E96700F3C321 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F549B7771F97E96700F3C321 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F549B7781F97E96700F3C321 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F549B77A1F97E96700F3C321 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		F549B79A1F97EB9900F3C321 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		F549B79B1F97EB9900F3C321 /* Man.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Man.swift; sourceTree = "<group>"; };
+		F549B7A11F97EC1D00F3C321 /* MapInfoAnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfoAnimalView.swift; sourceTree = "<group>"; };
+		F549B7A21F97EC1D00F3C321 /* MapInfoManView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfoManView.swift; sourceTree = "<group>"; };
+		F549B7A71F97EC4600F3C321 /* MapInfoAnimalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapInfoAnimalView.xib; sourceTree = "<group>"; };
+		F549B7A81F97EC4600F3C321 /* MapInfoManView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapInfoManView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F549B73A1F97E83E00F3C321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F72ED4BCE3D373EE3E4BE1 /* Pods_HCMapInfoView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		661534A123C9693B012DA6A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				341E2CD228169D077EFA3963 /* Pods_HCMapInfoView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A537C2951F989ACF002B5251 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A537C2961F989ACF002B5251 /* HCMapInfoView */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		A537C2961F989ACF002B5251 /* HCMapInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				A537C2971F989ACF002B5251 /* HCAnnotation.swift */,
+				A537C2981F989ACF002B5251 /* HCPinAnnotationView.swift */,
+				A537C2991F989ACF002B5251 /* HCAnnotationDelegate.swift */,
+				A537C29A1F989ACF002B5251 /* HCAnnotationView.swift */,
+				A537C29B1F989ACF002B5251 /* HCMapInfoViewSettings.swift */,
+				A537C29C1F989ACF002B5251 /* HCMapInfoView.swift */,
+				A5673E051F98F94200679FDB /* MKPointAnnotationExtension.swift */,
+			);
+			path = HCMapInfoView;
+			sourceTree = "<group>";
+		};
+		D11A2F203BFDCB4144EC29B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE9C04DAA17FA645D512D99F /* Pods-HCMapInfoView.debug.xcconfig */,
+				CF1A152F4563F61C476D2687 /* Pods-HCMapInfoView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F549B7341F97E83E00F3C321 = {
+			isa = PBXGroup;
+			children = (
+				F549B73F1F97E83E00F3C321 /* HCMapInfoView */,
+				F549B73E1F97E83E00F3C321 /* Products */,
+				D11A2F203BFDCB4144EC29B5 /* Pods */,
+				661534A123C9693B012DA6A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F549B73E1F97E83E00F3C321 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F549B73D1F97E83E00F3C321 /* HCMapInfoView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F549B73F1F97E83E00F3C321 /* HCMapInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				F549B7991F97EB9000F3C321 /* Model */,
+				F549B76F1F97E96700F3C321 /* AppCore */,
+				F549B7751F97E96700F3C321 /* Interface */,
+				F549B7731F97E96700F3C321 /* Resources */,
+				A537C2951F989ACF002B5251 /* Source */,
+			);
+			path = HCMapInfoView;
+			sourceTree = "<group>";
+		};
+		F549B76F1F97E96700F3C321 /* AppCore */ = {
+			isa = PBXGroup;
+			children = (
+				F549B7701F97E96700F3C321 /* Config */,
+			);
+			path = AppCore;
+			sourceTree = "<group>";
+		};
+		F549B7701F97E96700F3C321 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F549B7711F97E96700F3C321 /* AppDelegate.swift */,
+				F549B7721F97E96700F3C321 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F549B7731F97E96700F3C321 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F549B7741F97E96700F3C321 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F549B7751F97E96700F3C321 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F549B7801F97EA5D00F3C321 /* Xibs */,
+				F549B7761F97E96700F3C321 /* Storyboards */,
+				F549B7791F97E96700F3C321 /* ViewControllers */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		F549B7761F97E96700F3C321 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F549B7771F97E96700F3C321 /* LaunchScreen.storyboard */,
+				F549B7781F97E96700F3C321 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F549B7791F97E96700F3C321 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F549B77A1F97E96700F3C321 /* MapVC.swift */,
+				F549B7A01F97EC1D00F3C321 /* MapInfoView */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F549B7801F97EA5D00F3C321 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				F549B7A71F97EC4600F3C321 /* MapInfoAnimalView.xib */,
+				F549B7A81F97EC4600F3C321 /* MapInfoManView.xib */,
+				F5015FF11F994F6D0004F0AE /* MapInfoGreenView.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		F549B7991F97EB9000F3C321 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F549B79A1F97EB9900F3C321 /* Animal.swift */,
+				F549B79B1F97EB9900F3C321 /* Man.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F549B7A01F97EC1D00F3C321 /* MapInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				F549B7A11F97EC1D00F3C321 /* MapInfoAnimalView.swift */,
+				F549B7A21F97EC1D00F3C321 /* MapInfoManView.swift */,
+				F5015FF31F994F8A0004F0AE /* MapInfoGreenView.swift */,
+			);
+			path = MapInfoView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F549B73C1F97E83E00F3C321 /* HCMapInfoView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F549B74F1F97E83E00F3C321 /* Build configuration list for PBXNativeTarget "HCMapInfoView" */;
+			buildPhases = (
+				8734814775402179BBE90F05 /* [CP] Check Pods Manifest.lock */,
+				F549B7391F97E83E00F3C321 /* Sources */,
+				F549B73A1F97E83E00F3C321 /* Frameworks */,
+				F549B73B1F97E83E00F3C321 /* Resources */,
+				D963772CC027E2E11D55B0C1 /* [CP] Embed Pods Frameworks */,
+				291C28E434323A4805DB5DC4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HCMapInfoView;
+			productName = HCMapInfoView;
+			productReference = F549B73D1F97E83E00F3C321 /* HCMapInfoView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F549B7351F97E83E00F3C321 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Vladimir Dinic";
+				TargetAttributes = {
+					F549B73C1F97E83E00F3C321 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F549B7381F97E83E00F3C321 /* Build configuration list for PBXProject "HCMapInfoView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F549B7341F97E83E00F3C321;
+			productRefGroup = F549B73E1F97E83E00F3C321 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F549B73C1F97E83E00F3C321 /* HCMapInfoView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F549B73B1F97E83E00F3C321 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F549B77C1F97E97200F3C321 /* LaunchScreen.storyboard in Resources */,
+				F549B7A91F97EC4900F3C321 /* MapInfoAnimalView.xib in Resources */,
+				F549B77F1F97E99100F3C321 /* Assets.xcassets in Resources */,
+				F549B77D1F97E97200F3C321 /* Main.storyboard in Resources */,
+				F549B7AA1F97EC4900F3C321 /* MapInfoManView.xib in Resources */,
+				F5015FF21F994F6D0004F0AE /* MapInfoGreenView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		291C28E434323A4805DB5DC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HCMapInfoView/Pods-HCMapInfoView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8734814775402179BBE90F05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HCMapInfoView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D963772CC027E2E11D55B0C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HCMapInfoView/Pods-HCMapInfoView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HCFramework/HCFramework.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HCMapInfoView/Pods-HCMapInfoView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F549B7391F97E83E00F3C321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F549B79C1F97EB9B00F3C321 /* Animal.swift in Sources */,
+				F549B7A41F97EC2800F3C321 /* MapInfoAnimalView.swift in Sources */,
+				F549B79D1F97EB9E00F3C321 /* Man.swift in Sources */,
+				A537C2A11F989AD3002B5251 /* HCMapInfoViewSettings.swift in Sources */,
+				A537C29F1F989AD3002B5251 /* HCAnnotationDelegate.swift in Sources */,
+				A5673E061F98F94200679FDB /* MKPointAnnotationExtension.swift in Sources */,
+				F549B77E1F97E97600F3C321 /* MapVC.swift in Sources */,
+				A537C29E1F989AD3002B5251 /* HCPinAnnotationView.swift in Sources */,
+				A537C2A01F989AD3002B5251 /* HCAnnotationView.swift in Sources */,
+				F549B7A51F97EC2800F3C321 /* MapInfoManView.swift in Sources */,
+				A537C29D1F989AD3002B5251 /* HCAnnotation.swift in Sources */,
+				F5015FF41F994F8A0004F0AE /* MapInfoGreenView.swift in Sources */,
+				A537C2A21F989AD3002B5251 /* HCMapInfoView.swift in Sources */,
+				F549B77B1F97E96A00F3C321 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F549B74D1F97E83E00F3C321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F549B74E1F97E83E00F3C321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F549B7501F97E83E00F3C321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE9C04DAA17FA645D512D99F /* Pods-HCMapInfoView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E5FYD94489;
+				INFOPLIST_FILE = "$(SRCROOT)/HCMapInfoView/AppCore/Config/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hypercubesoft.HCMapInfoView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F549B7511F97E83E00F3C321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1A152F4563F61C476D2687 /* Pods-HCMapInfoView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E5FYD94489;
+				INFOPLIST_FILE = "$(SRCROOT)/HCMapInfoView/AppCore/Config/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hypercubesoft.HCMapInfoView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F549B7381F97E83E00F3C321 /* Build configuration list for PBXProject "HCMapInfoView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F549B74D1F97E83E00F3C321 /* Debug */,
+				F549B74E1F97E83E00F3C321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F549B74F1F97E83E00F3C321 /* Build configuration list for PBXNativeTarget "HCMapInfoView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F549B7501F97E83E00F3C321 /* Debug */,
+				F549B7511F97E83E00F3C321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F549B7351F97E83E00F3C321 /* Project object */;
+}

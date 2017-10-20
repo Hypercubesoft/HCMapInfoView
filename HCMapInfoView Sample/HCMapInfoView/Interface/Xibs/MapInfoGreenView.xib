@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aF4-ru-FMC" customClass="MapInfoGreenView" customModule="HCMapInfoView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="137" height="123"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="mapInfoViewGreenBubble" translatesAutoresizingMaskIntoConstraints="NO" id="T21-Ik-Jny">
+                    <rect key="frame" x="0.0" y="0.0" width="137" height="123"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="T21-Ik-Jny" secondAttribute="height" multiplier="490:440" priority="750" id="Bqi-LM-YAV"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Mp-3v-IZk">
+                    <rect key="frame" x="3.5" y="0.0" width="130" height="104.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFg-RS-qlT">
+                            <rect key="frame" x="3.5" y="30" width="124" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBe-T5-6fv">
+                            <rect key="frame" x="2.5" y="64" width="124" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="an2-bP-vSf">
+                            <rect key="frame" x="0.0" y="0.0" width="130" height="104.5"/>
+                            <connections>
+                                <action selector="pinPressedAction:" destination="aF4-ru-FMC" eventType="touchUpInside" id="i4O-YZ-qj9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="an2-bP-vSf" firstAttribute="top" secondItem="1Mp-3v-IZk" secondAttribute="top" id="AX9-8V-uQU"/>
+                        <constraint firstItem="uBe-T5-6fv" firstAttribute="centerX" secondItem="1Mp-3v-IZk" secondAttribute="centerX" id="Luh-SH-39a"/>
+                        <constraint firstItem="wFg-RS-qlT" firstAttribute="centerX" secondItem="1Mp-3v-IZk" secondAttribute="centerX" id="bjf-kN-F1g"/>
+                        <constraint firstAttribute="trailing" secondItem="an2-bP-vSf" secondAttribute="trailing" id="c7F-ME-ESt"/>
+                        <constraint firstItem="uBe-T5-6fv" firstAttribute="width" secondItem="wFg-RS-qlT" secondAttribute="width" id="fCo-98-ll2"/>
+                        <constraint firstItem="an2-bP-vSf" firstAttribute="leading" secondItem="1Mp-3v-IZk" secondAttribute="leading" id="fsg-W9-870"/>
+                        <constraint firstAttribute="bottom" secondItem="an2-bP-vSf" secondAttribute="bottom" id="gEZ-xl-Knm"/>
+                        <constraint firstItem="wFg-RS-qlT" firstAttribute="width" secondItem="1Mp-3v-IZk" secondAttribute="width" multiplier="0.95" id="h91-SQ-hbd"/>
+                        <constraint firstItem="wFg-RS-qlT" firstAttribute="centerY" secondItem="1Mp-3v-IZk" secondAttribute="centerY" multiplier="0.8" id="rVQ-up-ga6"/>
+                        <constraint firstItem="uBe-T5-6fv" firstAttribute="top" secondItem="wFg-RS-qlT" secondAttribute="bottom" constant="10" id="sM7-xX-WI2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1Mp-3v-IZk" firstAttribute="top" secondItem="aF4-ru-FMC" secondAttribute="top" id="8w4-0E-ec8"/>
+                <constraint firstItem="T21-Ik-Jny" firstAttribute="centerY" secondItem="aF4-ru-FMC" secondAttribute="centerY" id="9Q0-vP-4hg"/>
+                <constraint firstItem="1Mp-3v-IZk" firstAttribute="centerX" secondItem="aF4-ru-FMC" secondAttribute="centerX" id="Ikg-en-teu"/>
+                <constraint firstItem="1Mp-3v-IZk" firstAttribute="height" secondItem="aF4-ru-FMC" secondAttribute="height" multiplier="0.85" id="OLa-vn-wJz"/>
+                <constraint firstItem="T21-Ik-Jny" firstAttribute="width" secondItem="aF4-ru-FMC" secondAttribute="width" id="WdM-Pv-len"/>
+                <constraint firstItem="T21-Ik-Jny" firstAttribute="height" secondItem="aF4-ru-FMC" secondAttribute="height" id="etR-Bq-vmi"/>
+                <constraint firstItem="T21-Ik-Jny" firstAttribute="centerX" secondItem="aF4-ru-FMC" secondAttribute="centerX" id="izy-9i-5gY"/>
+                <constraint firstItem="1Mp-3v-IZk" firstAttribute="width" secondItem="aF4-ru-FMC" secondAttribute="width" multiplier="0.95" id="pNm-tf-cdD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="mRe-hz-51t"/>
+            <connections>
+                <outlet property="subtitleLabel" destination="uBe-T5-6fv" id="LhU-p0-BhZ"/>
+                <outlet property="titleLabel" destination="wFg-RS-qlT" id="nOP-wa-iYm"/>
+            </connections>
+            <point key="canvasLocation" x="1.5" y="-146.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mapInfoViewGreenBubble" width="522" height="468"/>
+    </resources>
+</document>

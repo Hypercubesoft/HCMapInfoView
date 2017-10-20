@@ -1,0 +1,6 @@
+framework module HCFramework {
+  umbrella header "HCFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
