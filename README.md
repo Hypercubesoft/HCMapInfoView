@@ -74,7 +74,7 @@ Using this library includes several basic steps:
     }
     ``` 
        
-       If you need to make simple pin which can show custom info views, you can use the same method, but with additional parameters which define the class for custom map info view and nib name, like in this sample code: 
+    If you need to make simple pin which can show custom info views, you can use the same method, but with additional parameters which define the class for custom map info view and nib name, like in this sample code: 
        
     ```swift
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? 
@@ -91,7 +91,7 @@ Using this library includes several basic steps:
     ``` 
        
        
-       Further, if you want to show pin with a custom image which can show callout, but not custom info view, you can use HCAnnotationView class and its static hcCreatePin method, like in this sample code: 
+    Further, if you want to show pin with a custom image which can show callout, but not custom info view, you can use HCAnnotationView class and its static hcCreatePin method, like in this sample code: 
        
     ```swift
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? 
@@ -102,7 +102,7 @@ Using this library includes several basic steps:
     }
     ``` 
        
-       And finally, if you want to show pin with a custom image which can show custom info views, you can the same method, but with additional parameters which define the class for custom map info view and nib name, like in this sample code:
+    And finally, if you want to show pin with a custom image which can show custom info views, you can the same method, but with additional parameters which define the class for custom map info view and nib name, like in this sample code:
        
     ```swift
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? 
