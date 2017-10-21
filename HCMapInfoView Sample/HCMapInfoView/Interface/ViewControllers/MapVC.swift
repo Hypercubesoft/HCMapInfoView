@@ -72,7 +72,7 @@ class MapVC: UIViewController, MKMapViewDelegate
         mapView.addAnnotation(Animal(name:"Rover", type:"Dog", coordinate:CLLocationCoordinate2D(latitude: 39.0, longitude: -99.0), age:2, image:#imageLiteral(resourceName: "dog")))
         mapView.addAnnotation(Animal(name:"Holly", type:"Cat", coordinate:CLLocationCoordinate2D(latitude: 53.0, longitude: 83.0), age:1, image:#imageLiteral(resourceName: "cat")))
         mapView.addAnnotation(Man(name:"John", profession:"Engineer", coordinate:CLLocationCoordinate2D(latitude: -34.0, longitude: -65.0), userPoints:12345, userImage:#imageLiteral(resourceName: "man")))
-        mapView.addAnnotation(Man(name:"Ema", profession:"Proffesor", coordinate:CLLocationCoordinate2D(latitude: -20.0, longitude: 15.0), userPoints:43210, userImage:#imageLiteral(resourceName: "woman")))
+        mapView.addAnnotation(Man(name:"Ema", profession:"Professor", coordinate:CLLocationCoordinate2D(latitude: -20.0, longitude: 15.0), userPoints:43210, userImage:#imageLiteral(resourceName: "woman")))
     }
     
     // MARK: - MKMapViewDelegate methods
