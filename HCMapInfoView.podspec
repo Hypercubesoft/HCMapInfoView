@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.name             = "HCMapInfoView"
 s.version          = "1.0.0"
-s.summary          = "HCMapInfoView is a helper library for creating custom info views for Apple maps."
+s.summary          = "HCMapInfoView is an iOS library for creating custom info views for Apple maps."
 
 s.description      = <<-DESC
-HCMapInfoView is a helper library which facilitates creating custom info views for Apple maps.
+HCMapInfoView is an iOS library which facilitates creating custom info views for Apple maps.
 DESC
 
 s.homepage         = "https://github.com/Hypercubesoft/HCMapInfoView"
