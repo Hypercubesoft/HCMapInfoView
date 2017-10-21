@@ -6,7 +6,7 @@
 
 ![GitHub Logo](Images/HCMapInfoView-Logo.png)
 
-**HCMapInfoView** is a helper library which facilitates creating custom info views for Apple maps. It also makes easy to create pins (annotation views).
+**HCMapInfoView** is an iOS library which facilitates creating custom info views for Apple maps. It also makes easy to create pins (annotation views).
 
 ![GitHub Logo](Images/Screenshots/HCMapInfoView-Screenshot.jpg)
 
